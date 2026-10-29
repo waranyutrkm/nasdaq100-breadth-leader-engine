@@ -64,12 +64,14 @@ def run_audit(start_date: str = "2011-01-03", end_date: str = "2026-09-09") -> d
 
     results = {}
     nav_series = {}
+    trade_logs_by_strat = {}
 
     for spec in specs:
         print(f"    Evaluating strategy: {spec.name}...")
-        sim_res = engine.simulate(spec, start_date=start_date, end_date=end_date, cost_bps=5.0, record_ledger=False)
+        sim_res = engine.simulate(spec, start_date=start_date, end_date=end_date, cost_bps=5.0, record_ledger=True)
         daily_df = sim_res["daily"]
         metrics = sim_res["metrics"]
+        trade_logs = sim_res.get("trades", [])
 
         # Calculate annual returns
         daily_df["year"] = daily_df.index.year
@@ -92,6 +94,9 @@ def run_audit(start_date: str = "2011-01-03", end_date: str = "2026-09-09") -> d
             "annual_returns": annual_rets,
         }
 
+        # Keep recent 250 trades for web timeline
+        trade_logs_by_strat[spec.name] = trade_logs[-250:] if len(trade_logs) > 250 else trade_logs
+
         # Store downsampled NAV curve for web rendering (1 point per week to keep payload lean)
         nav_weekly = daily_df["nav"].resample("W-FRI").last().dropna()
         nav_series[spec.name] = [
@@ -108,6 +113,7 @@ def run_audit(start_date: str = "2011-01-03", end_date: str = "2026-09-09") -> d
         },
         "summary_table": results,
         "nav_series": nav_series,
+        "trade_logs": trade_logs_by_strat,
     }
 
     out_file = DATA_DIR / "backtest_results.json"

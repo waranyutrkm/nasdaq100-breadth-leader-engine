@@ -231,16 +231,37 @@ class CausalPortfolioEngine:
                 free_cash = float(nav_open - fee - values.sum())
 
                 if record_ledger:
+                    regime_str = str(breadth_df["regime"].iloc[s])
                     for j in np.flatnonzero(np.abs(delta) > 5.0):
+                        sym = symbols[j]
+                        is_buy = delta[j] > 0
+                        if is_buy:
+                            if sym == spec.benchmark_symbol:
+                                reason = "BUY_CORE (ถือครองแกนหลักตามสัดส่วน Core 50%)"
+                            elif sym == spec.cash_symbol:
+                                reason = "PARK_CASH (พักสภาพคล่องใน BIL รับดอกเบี้ยระยะสั้น)"
+                            else:
+                                reason = f"BUY_LEADER (เข้าซื้อหุ้นผู้นำตามคะแนนโมเมนตัมและ Inverse Vol)"
+                        else:
+                            if target_exposure <= 0.05:
+                                reason = "EXIT_CASH_GUARD (ขายล้างพอร์ตเข้า BIL เพื่อป้องกันเงินต้น)"
+                            elif sym not in (selected if 'selected' in locals() and selected else []):
+                                reason = "EXIT_HYSTERESIS_DROP (ขายออกหลังหุ้นเดิมตกอันดับเกินขอบเขตบัฟเฟอร์)"
+                            else:
+                                reason = "REBALANCE_TRIM (ปรับลดสัดส่วนตามรอบคำนวณความผันผวน)"
+
                         trade_logs.append({
                             "fill_date": str(dates[i].date()),
                             "signal_date": str(dates[s].date()),
-                            "symbol": symbols[j],
-                            "action": "BUY" if delta[j] > 0 else "SELL",
+                            "symbol": sym,
+                            "action": "BUY" if is_buy else "SELL",
                             "notional": float(abs(delta[j])),
                             "price": float(o[i, j]),
                             "weight": float(values[j] / (nav_after if nav_after > 0 else 1.0)),
                             "fee": float(abs(delta[j]) * cost_rate),
+                            "reason": reason,
+                            "regime": regime_str,
+                            "nav": float(nav_after),
                         })
 
                 prior_exposure = target_exposure

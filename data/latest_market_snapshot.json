@@ -1,8 +1,8 @@
 {
   "metadata": {
     "last_updated_date": "2026-09-09",
-    "generated_at_utc": "2026-10-29T13:07:29.390275+00:00",
-    "total_constituents": 160
+    "generated_at_utc": "2026-10-29T13:32:45.915126+00:00",
+    "total_constituents": 100
   },
   "market_macro": {
     "qqq_close": 716.65,
@@ -27,21 +27,144 @@
       "description": "50% QQQ Core + 50% Top Leader Satellite (โมเดลแนะนำสำหรับตลาดหุ้นสหรัฐฯ)",
       "allocations": {
         "QQQ": 0.5,
-        "MRNA": 0.0292,
-        "TEAM": 0.1,
-        "OKTA": 0.1,
-        "LITE": 0.1,
-        "MU": 0.1,
-        "BIL": 0.0708
+        "TEAM": 0.072,
+        "MU": 0.0732,
+        "CRWD": 0.1,
+        "PLTR": 0.0877,
+        "MSFT": 0.1,
+        "BIL": 0.0671
       },
       "selected_tickers": [
-        "MRNA",
         "TEAM",
-        "OKTA",
-        "LITE",
-        "MU"
+        "MU",
+        "CRWD",
+        "PLTR",
+        "MSFT"
       ],
-      "exposure_pct": 92.9
+      "exposure_pct": 93.3,
+      "actions": {
+        "buy": [
+          {
+            "ticker": "QQQ",
+            "name": "Invesco QQQ Trust (Nasdaq-100 Core)",
+            "price": 716.65,
+            "weight": 0.5,
+            "reason": "ถือครองแกนหลัก Core 50% เพื่อเกาะ Secular Trend ของตลาด",
+            "badge": "[CORE HOLD]"
+          },
+          {
+            "ticker": "TEAM",
+            "name": "Atlassian Corporation",
+            "price": 178.16,
+            "weight": 0.072,
+            "reason": "หุ้นผู้นำอันดับ #1 (Score: +97.98%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "MU",
+            "name": "MU Corporation",
+            "price": 1024.13,
+            "weight": 0.0732,
+            "reason": "หุ้นผู้นำอันดับ #2 (Score: +38.1%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "CRWD",
+            "name": "CrowdStrike Holdings Inc.",
+            "price": 208.15,
+            "weight": 0.1,
+            "reason": "หุ้นผู้นำอันดับ #3 (Score: +32.04%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "PLTR",
+            "name": "Palantir Technologies Inc.",
+            "price": 170.76,
+            "weight": 0.0877,
+            "reason": "หุ้นผู้นำอันดับ #4 (Score: +31.5%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "MSFT",
+            "name": "Microsoft Corporation",
+            "price": 493.13,
+            "weight": 0.1,
+            "reason": "หุ้นผู้นำอันดับ #5 (Score: +26.01%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "BIL",
+            "name": "SPDR 1-3 Month T-Bill (Cash Reserve)",
+            "price": 91.46,
+            "weight": 0.0671,
+            "reason": "พักเงินสดในตั๋วเงินคลังสหรัฐฯ รับผลตอบแทนดอกเบี้ยระยะสั้น",
+            "badge": "[CASH YIELD]"
+          }
+        ],
+        "hold": [
+          {
+            "ticker": "MSTR",
+            "name": "MSTR Corporation",
+            "price": 134.99,
+            "weight": 0.0,
+            "reason": "อันดับ #6 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          },
+          {
+            "ticker": "INSM",
+            "name": "INSM Corporation",
+            "price": 129.76,
+            "weight": 0.0,
+            "reason": "อันดับ #7 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          },
+          {
+            "ticker": "REGN",
+            "name": "Regeneron Pharmaceuticals Inc.",
+            "price": 807.07,
+            "weight": 0.0,
+            "reason": "อันดับ #8 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          }
+        ],
+        "sell": [
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices Inc.",
+            "price": 523.96,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "INTC",
+            "name": "Intel Corporation",
+            "price": 106.06,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "WDAY",
+            "name": "Workday Inc.",
+            "price": 185.11,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "PANW",
+            "name": "Palo Alto Networks Inc.",
+            "price": 334.68,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "FTNT",
+            "name": "Fortinet Inc.",
+            "price": 157.47,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          }
+        ]
+      }
     },
     "fast_alpha": {
       "name": "Fast-Alpha Leader",
@@ -50,49 +173,206 @@
         "BIL": 1.0
       },
       "selected_tickers": [
-        "MRNA",
         "TEAM",
-        "OKTA",
-        "LITE",
-        "MU"
+        "MU",
+        "CRWD",
+        "PLTR",
+        "MSFT"
       ],
-      "exposure_pct": 0.0
+      "exposure_pct": 0.0,
+      "actions": {
+        "buy": [
+          {
+            "ticker": "BIL",
+            "name": "SPDR 1-3 Month T-Bill (Cash Reserve)",
+            "price": 91.46,
+            "weight": 1.0,
+            "reason": "พักเงินสดในตั๋วเงินคลังสหรัฐฯ รับผลตอบแทนดอกเบี้ยระยะสั้น",
+            "badge": "[CASH YIELD]"
+          }
+        ],
+        "hold": [
+          {
+            "ticker": "MSTR",
+            "name": "MSTR Corporation",
+            "price": 134.99,
+            "weight": 0.0,
+            "reason": "อันดับ #6 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          },
+          {
+            "ticker": "INSM",
+            "name": "INSM Corporation",
+            "price": 129.76,
+            "weight": 0.0,
+            "reason": "อันดับ #7 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          },
+          {
+            "ticker": "REGN",
+            "name": "Regeneron Pharmaceuticals Inc.",
+            "price": 807.07,
+            "weight": 0.0,
+            "reason": "อันดับ #8 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          }
+        ],
+        "sell": [
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices Inc.",
+            "price": 523.96,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "INTC",
+            "name": "Intel Corporation",
+            "price": 106.06,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "WDAY",
+            "name": "Workday Inc.",
+            "price": 185.11,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "PANW",
+            "name": "Palo Alto Networks Inc.",
+            "price": 334.68,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "FTNT",
+            "name": "Fortinet Inc.",
+            "price": 157.47,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          }
+        ]
+      }
     },
     "legacy_adaptive": {
       "name": "Adaptive Regime Guard",
       "description": "ปรับสัดส่วนถือครองตามเกณฑ์ความกว้างตลาด (0% / 70% / 90% / 95%)",
       "allocations": {
-        "MRNA": 0.0941,
         "TEAM": 0.18,
-        "OKTA": 0.18,
-        "BIL": 0.5459
+        "MU": 0.18,
+        "CRWD": 0.18,
+        "BIL": 0.46
       },
       "selected_tickers": [
-        "MRNA",
         "TEAM",
-        "OKTA"
+        "MU",
+        "CRWD"
       ],
-      "exposure_pct": 45.4
+      "exposure_pct": 54.0,
+      "actions": {
+        "buy": [
+          {
+            "ticker": "TEAM",
+            "name": "Atlassian Corporation",
+            "price": 178.16,
+            "weight": 0.18,
+            "reason": "หุ้นผู้นำอันดับ #1 (Score: +97.98%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "MU",
+            "name": "MU Corporation",
+            "price": 1024.13,
+            "weight": 0.18,
+            "reason": "หุ้นผู้นำอันดับ #2 (Score: +38.1%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "CRWD",
+            "name": "CrowdStrike Holdings Inc.",
+            "price": 208.15,
+            "weight": 0.18,
+            "reason": "หุ้นผู้นำอันดับ #3 (Score: +32.04%)",
+            "badge": "[ALPHA BUY]"
+          },
+          {
+            "ticker": "BIL",
+            "name": "SPDR 1-3 Month T-Bill (Cash Reserve)",
+            "price": 91.46,
+            "weight": 0.46,
+            "reason": "พักเงินสดในตั๋วเงินคลังสหรัฐฯ รับผลตอบแทนดอกเบี้ยระยะสั้น",
+            "badge": "[CASH YIELD]"
+          }
+        ],
+        "hold": [
+          {
+            "ticker": "MSTR",
+            "name": "MSTR Corporation",
+            "price": 134.99,
+            "weight": 0.0,
+            "reason": "อันดับ #6 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          },
+          {
+            "ticker": "INSM",
+            "name": "INSM Corporation",
+            "price": 129.76,
+            "weight": 0.0,
+            "reason": "อันดับ #7 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          },
+          {
+            "ticker": "REGN",
+            "name": "Regeneron Pharmaceuticals Inc.",
+            "price": 807.07,
+            "weight": 0.0,
+            "reason": "อันดับ #8 อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+            "badge": "[HOLD BUFFER]"
+          }
+        ],
+        "sell": [
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices Inc.",
+            "price": 523.96,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "INTC",
+            "name": "Intel Corporation",
+            "price": 106.06,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "WDAY",
+            "name": "Workday Inc.",
+            "price": 185.11,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "PANW",
+            "name": "Palo Alto Networks Inc.",
+            "price": 334.68,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          },
+          {
+            "ticker": "FTNT",
+            "name": "Fortinet Inc.",
+            "price": 157.47,
+            "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+            "badge": "[EXIT TREND]"
+          }
+        ]
+      }
     }
   },
   "stock_rankings": [
-    {
-      "ticker": "MRNA",
-      "name": "MRNA Corp",
-      "sector": "Technology",
-      "price": 138.38,
-      "momentum_score": 159.97,
-      "ret30": 147.96,
-      "ret60": 177.25,
-      "ret120": 164.07,
-      "vol63": 366.08,
-      "ema12": 137.99,
-      "ema26": 118.91,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 1
-    },
     {
       "ticker": "TEAM",
       "name": "Atlassian Corporation",
@@ -108,41 +388,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 2
-    },
-    {
-      "ticker": "OKTA",
-      "name": "OKTA Corp",
-      "sector": "Technology",
-      "price": 171.54,
-      "momentum_score": 50.96,
-      "ret30": 25.93,
-      "ret60": 47.51,
-      "ret120": 118.71,
-      "vol63": 75.59,
-      "ema12": 162.32,
-      "ema26": 154.45,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 3
-    },
-    {
-      "ticker": "LITE",
-      "name": "LITE Corp",
-      "sector": "Technology",
-      "price": 1003.24,
-      "momentum_score": 38.23,
-      "ret30": 53.89,
-      "ret60": 8.86,
-      "ret120": 43.15,
-      "vol63": 97.42,
-      "ema12": 911.82,
-      "ema26": 881.95,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 4
+      "rank": 1,
+      "signal": "BUY",
+      "signal_badge": "[ALPHA BUY]",
+      "action_reason": "ผู้นำอันดับ #1 ผ่านเกณฑ์ Trend & Momentum ครบถ้วน (เป้าหมาย Top-5)"
     },
     {
       "ticker": "MU",
@@ -159,24 +408,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 5
-    },
-    {
-      "ticker": "SMCI",
-      "name": "SMCI Corp",
-      "sector": "Technology",
-      "price": 39.03,
-      "momentum_score": 32.74,
-      "ret30": 37.17,
-      "ret60": 28.12,
-      "ret120": 28.58,
-      "vol63": 111.29,
-      "ema12": 37.98,
-      "ema26": 36.19,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 6
+      "rank": 2,
+      "signal": "BUY",
+      "signal_badge": "[ALPHA BUY]",
+      "action_reason": "ผู้นำอันดับ #2 ผ่านเกณฑ์ Trend & Momentum ครบถ้วน (เป้าหมาย Top-5)"
     },
     {
       "ticker": "CRWD",
@@ -193,7 +428,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 7
+      "rank": 3,
+      "signal": "BUY",
+      "signal_badge": "[ALPHA BUY]",
+      "action_reason": "ผู้นำอันดับ #3 ผ่านเกณฑ์ Trend & Momentum ครบถ้วน (เป้าหมาย Top-5)"
     },
     {
       "ticker": "PLTR",
@@ -210,24 +448,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 8
-    },
-    {
-      "ticker": "DOCU",
-      "name": "DOCU Corp",
-      "sector": "Technology",
-      "price": 64.34,
-      "momentum_score": 26.66,
-      "ret30": 14.95,
-      "ret60": 42.88,
-      "ret120": 31.57,
-      "vol63": 53.25,
-      "ema12": 64.33,
-      "ema26": 61.71,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 9
+      "rank": 4,
+      "signal": "BUY",
+      "signal_badge": "[ALPHA BUY]",
+      "action_reason": "ผู้นำอันดับ #4 ผ่านเกณฑ์ Trend & Momentum ครบถ้วน (เป้าหมาย Top-5)"
     },
     {
       "ticker": "MSFT",
@@ -244,7 +468,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 10
+      "rank": 5,
+      "signal": "BUY",
+      "signal_badge": "[ALPHA BUY]",
+      "action_reason": "ผู้นำอันดับ #5 ผ่านเกณฑ์ Trend & Momentum ครบถ้วน (เป้าหมาย Top-5)"
     },
     {
       "ticker": "MSTR",
@@ -261,24 +488,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 11
-    },
-    {
-      "ticker": "GEN",
-      "name": "GEN Corp",
-      "sector": "Technology",
-      "price": 29.81,
-      "momentum_score": 20.45,
-      "ret30": 8.54,
-      "ret60": 23.09,
-      "ret120": 46.24,
-      "vol63": 34.29,
-      "ema12": 30.02,
-      "ema26": 29.22,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 12
+      "rank": 6,
+      "signal": "HOLD",
+      "signal_badge": "[HOLD BUFFER]",
+      "action_reason": "อยู่อันดับ #6 ในขอบเขต Buffer (อันดับ 1–8) ให้ถือต่อไม่ขายหมู"
     },
     {
       "ticker": "INSM",
@@ -295,7 +508,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 13
+      "rank": 7,
+      "signal": "HOLD",
+      "signal_badge": "[HOLD BUFFER]",
+      "action_reason": "อยู่อันดับ #7 ในขอบเขต Buffer (อันดับ 1–8) ให้ถือต่อไม่ขายหมู"
     },
     {
       "ticker": "REGN",
@@ -312,41 +528,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 14
-    },
-    {
-      "ticker": "SWKS",
-      "name": "SWKS Corp",
-      "sector": "Technology",
-      "price": 75.83,
-      "momentum_score": 17.93,
-      "ret30": 17.24,
-      "ret60": 2.51,
-      "ret120": 42.76,
-      "vol63": 48.74,
-      "ema12": 71.02,
-      "ema26": 68.91,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 15
-    },
-    {
-      "ticker": "MTCH",
-      "name": "MTCH Corp",
-      "sector": "Technology",
-      "price": 41.41,
-      "momentum_score": 15.74,
-      "ret30": 5.42,
-      "ret60": 19.32,
-      "ret120": 36.14,
-      "vol63": 36.13,
-      "ema12": 41.3,
-      "ema26": 40.42,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 16
+      "rank": 8,
+      "signal": "HOLD",
+      "signal_badge": "[HOLD BUFFER]",
+      "action_reason": "อยู่อันดับ #8 ในขอบเขต Buffer (อันดับ 1–8) ให้ถือต่อไม่ขายหมู"
     },
     {
       "ticker": "NVDA",
@@ -363,7 +548,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 17
+      "rank": 9,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #9 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "META",
@@ -380,24 +568,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 18
-    },
-    {
-      "ticker": "ULTA",
-      "name": "ULTA Corp",
-      "sector": "Technology",
-      "price": 546.45,
-      "momentum_score": 10.52,
-      "ret30": 8.96,
-      "ret60": 16.83,
-      "ret120": 4.96,
-      "vol63": 35.34,
-      "ema12": 543.85,
-      "ema26": 532.7,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 19
+      "rank": 10,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #10 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "CEG",
@@ -414,7 +588,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 20
+      "rank": 11,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #11 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "GILD",
@@ -431,24 +608,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 21
-    },
-    {
-      "ticker": "VOD",
-      "name": "VOD Corp",
-      "sector": "Technology",
-      "price": 17.17,
-      "momentum_score": 9.86,
-      "ret30": 4.73,
-      "ret60": 10.53,
-      "ret120": 21.68,
-      "vol63": 39.06,
-      "ema12": 16.52,
-      "ema26": 16.17,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 22
+      "rank": 12,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #12 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "BKR",
@@ -465,7 +628,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 23
+      "rank": 13,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #13 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "KDP",
@@ -482,7 +648,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 24
+      "rank": 14,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #14 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "FANG",
@@ -499,7 +668,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 25
+      "rank": 15,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #15 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "WBD",
@@ -516,41 +688,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 26
-    },
-    {
-      "ticker": "VRSN",
-      "name": "VRSN Corp",
-      "sector": "Technology",
-      "price": 286.73,
-      "momentum_score": 6.11,
-      "ret30": 2.28,
-      "ret60": 2.74,
-      "ret120": 20.7,
-      "vol63": 32.98,
-      "ema12": 288.09,
-      "ema26": 286.05,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 27
-    },
-    {
-      "ticker": "TSCO",
-      "name": "TSCO Corp",
-      "sector": "Technology",
-      "price": 34.31,
-      "momentum_score": 3.25,
-      "ret30": 9.83,
-      "ret60": 10.57,
-      "ret120": -24.19,
-      "vol63": 30.03,
-      "ema12": 34.79,
-      "ema26": 34.28,
-      "trend_gate": true,
-      "passes_all": true,
-      "above_ema50": true,
-      "rank": 28
+      "rank": 16,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #16 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "CPRT",
@@ -567,24 +708,10 @@
       "trend_gate": true,
       "passes_all": true,
       "above_ema50": true,
-      "rank": 29
-    },
-    {
-      "ticker": "SNDK",
-      "name": "SNDK Corp",
-      "sector": "Technology",
-      "price": 1768.9,
-      "momentum_score": 54.43,
-      "ret30": 61.38,
-      "ret60": -10.67,
-      "ret120": 134.7,
-      "vol63": 136.7,
-      "ema12": 1615.24,
-      "ema26": 1560.98,
-      "trend_gate": true,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 30
+      "rank": 17,
+      "signal": "WATCHLIST",
+      "signal_badge": "[WATCHLIST]",
+      "action_reason": "ผ่านเกณฑ์ทุกข้อ อันดับ #17 อยู่ในคิวรอสลับเข้าพอร์ต"
     },
     {
       "ticker": "MRVL",
@@ -601,7 +728,10 @@
       "trend_gate": true,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 31
+      "rank": 18,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AMD",
@@ -618,7 +748,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 32
+      "rank": 19,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "STX",
@@ -635,7 +768,10 @@
       "trend_gate": true,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 33
+      "rank": 20,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "INTC",
@@ -652,7 +788,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 34
+      "rank": 21,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "WDAY",
@@ -669,7 +808,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 35
+      "rank": 22,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "PANW",
@@ -686,41 +828,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 36
-    },
-    {
-      "ticker": "ILMN",
-      "name": "ILMN Corp",
-      "sector": "Technology",
-      "price": 207.68,
-      "momentum_score": 26.3,
-      "ret30": 7.62,
-      "ret60": 29.02,
-      "ret120": 68.91,
-      "vol63": 43.68,
-      "ema12": 213.05,
-      "ema26": 208.01,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 37
-    },
-    {
-      "ticker": "NTAP",
-      "name": "NTAP Corp",
-      "sector": "Technology",
-      "price": 185.91,
-      "momentum_score": 25.08,
-      "ret30": 6.52,
-      "ret60": 15.39,
-      "ret120": 86.0,
-      "vol63": 39.11,
-      "ema12": 187.45,
-      "ema26": 186.71,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 38
+      "rank": 23,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "FTNT",
@@ -737,7 +848,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 39
+      "rank": 24,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ABNB",
@@ -754,24 +868,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 40
-    },
-    {
-      "ticker": "MDB",
-      "name": "MDB Corp",
-      "sector": "Technology",
-      "price": 361.25,
-      "momentum_score": 16.67,
-      "ret30": 16.3,
-      "ret60": 5.38,
-      "ret120": 34.53,
-      "vol63": 66.49,
-      "ema12": 393.96,
-      "ema26": 395.75,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 41
+      "rank": 25,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ARM",
@@ -788,7 +888,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 42
+      "rank": 26,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ZS",
@@ -805,7 +908,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 43
+      "rank": 27,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "DXCM",
@@ -822,7 +928,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 44
+      "rank": 28,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "DASH",
@@ -839,7 +948,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 45
+      "rank": 29,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CTSH",
@@ -856,7 +968,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 46
+      "rank": 30,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "LRCX",
@@ -873,7 +988,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 47
+      "rank": 31,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "VRTX",
@@ -890,7 +1008,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 48
+      "rank": 32,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ADP",
@@ -907,24 +1028,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 49
-    },
-    {
-      "ticker": "INCY",
-      "name": "INCY Corp",
-      "sector": "Technology",
-      "price": 126.49,
-      "momentum_score": 11.06,
-      "ret30": -2.65,
-      "ret60": 16.54,
-      "ret120": 37.13,
-      "vol63": 36.91,
-      "ema12": 126.06,
-      "ema26": 124.35,
-      "trend_gate": true,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 50
+      "rank": 33,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "WDC",
@@ -941,24 +1048,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 51
-    },
-    {
-      "ticker": "BMRN",
-      "name": "BMRN Corp",
-      "sector": "Technology",
-      "price": 64.89,
-      "momentum_score": 10.47,
-      "ret30": 4.54,
-      "ret60": 15.97,
-      "ret120": 17.06,
-      "vol63": 30.07,
-      "ema12": 65.65,
-      "ema26": 65.01,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 52
+      "rank": 34,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ADBE",
@@ -975,7 +1068,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 53
+      "rank": 35,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AMZN",
@@ -992,7 +1088,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 54
+      "rank": 36,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "PAYX",
@@ -1009,58 +1108,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 55
-    },
-    {
-      "ticker": "ZM",
-      "name": "ZM Corp",
-      "sector": "Technology",
-      "price": 96.32,
-      "momentum_score": 8.7,
-      "ret30": 5.3,
-      "ret60": 2.82,
-      "ret120": 26.03,
-      "vol63": 44.11,
-      "ema12": 98.61,
-      "ema26": 99.06,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 56
-    },
-    {
-      "ticker": "WTW",
-      "name": "WTW Corp",
-      "sector": "Technology",
-      "price": 316.76,
-      "momentum_score": 8.61,
-      "ret30": 0.19,
-      "ret60": 21.05,
-      "ret120": 10.99,
-      "vol63": 30.49,
-      "ema12": 333.5,
-      "ema26": 331.03,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 57
-    },
-    {
-      "ticker": "HSIC",
-      "name": "HSIC Corp",
-      "sector": "Technology",
-      "price": 88.5,
-      "momentum_score": 8.52,
-      "ret30": 3.26,
-      "ret60": 8.93,
-      "ret120": 21.04,
-      "vol63": 20.36,
-      "ema12": 89.41,
-      "ema26": 88.82,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 58
+      "rank": 37,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ASML",
@@ -1077,7 +1128,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 59
+      "rank": 38,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "DDOG",
@@ -1094,7 +1148,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 60
+      "rank": 39,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ROP",
@@ -1111,7 +1168,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 61
+      "rank": 40,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "MELI",
@@ -1128,7 +1188,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 62
+      "rank": 41,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "PYPL",
@@ -1145,58 +1208,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 63
-    },
-    {
-      "ticker": "FOXA",
-      "name": "FOXA Corp",
-      "sector": "Technology",
-      "price": 63.83,
-      "momentum_score": 6.99,
-      "ret30": 11.07,
-      "ret60": -2.64,
-      "ret120": 11.21,
-      "vol63": 50.32,
-      "ema12": 66.21,
-      "ema26": 65.09,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 64
-    },
-    {
-      "ticker": "CDW",
-      "name": "CDW Corp",
-      "sector": "Technology",
-      "price": 142.79,
-      "momentum_score": 6.91,
-      "ret30": -0.39,
-      "ret60": 8.53,
-      "ret120": 22.73,
-      "vol63": 48.67,
-      "ema12": 145.91,
-      "ema26": 143.05,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 65
-    },
-    {
-      "ticker": "FOX",
-      "name": "FOX Corp",
-      "sector": "Technology",
-      "price": 57.1,
-      "momentum_score": 6.8,
-      "ret30": 11.14,
-      "ret60": -2.61,
-      "ret120": 10.05,
-      "vol63": 47.4,
-      "ema12": 59.13,
-      "ema26": 58.11,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 66
+      "rank": 42,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "QCOM",
@@ -1213,24 +1228,10 @@
       "trend_gate": true,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 67
-    },
-    {
-      "ticker": "BIIB",
-      "name": "BIIB Corp",
-      "sector": "Technology",
-      "price": 211.93,
-      "momentum_score": 6.57,
-      "ret30": 3.08,
-      "ret60": 5.94,
-      "ret120": 16.25,
-      "vol63": 39.09,
-      "ema12": 216.95,
-      "ema26": 214.43,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 68
+      "rank": 43,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "TSLA",
@@ -1247,7 +1248,10 @@
       "trend_gate": true,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 69
+      "rank": 44,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AMGN",
@@ -1264,7 +1268,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 70
+      "rank": 45,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "SHOP",
@@ -1281,24 +1288,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 71
-    },
-    {
-      "ticker": "EXPE",
-      "name": "EXPE Corp",
-      "sector": "Technology",
-      "price": 271.83,
-      "momentum_score": 5.06,
-      "ret30": -7.97,
-      "ret60": 21.05,
-      "ret120": 13.65,
-      "vol63": 48.79,
-      "ema12": 302.09,
-      "ema26": 305.06,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 72
+      "rank": 46,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "TRI",
@@ -1315,7 +1308,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 73
+      "rank": 47,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "FAST",
@@ -1332,7 +1328,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 74
+      "rank": 48,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AAPL",
@@ -1349,7 +1348,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 75
+      "rank": 49,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CSCO",
@@ -1366,41 +1368,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 76
-    },
-    {
-      "ticker": "SIRI",
-      "name": "SIRI Corp",
-      "sector": "Technology",
-      "price": 28.67,
-      "momentum_score": 3.22,
-      "ret30": -8.66,
-      "ret60": 5.15,
-      "ret120": 30.02,
-      "vol63": 30.7,
-      "ema12": 28.81,
-      "ema26": 28.93,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 77
-    },
-    {
-      "ticker": "JBHT",
-      "name": "JBHT Corp",
-      "sector": "Technology",
-      "price": 266.68,
-      "momentum_score": 2.89,
-      "ret30": -3.78,
-      "ret60": -7.68,
-      "ret120": 35.41,
-      "vol63": 34.61,
-      "ema12": 267.56,
-      "ema26": 269.58,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 78
+      "rank": 50,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CSX",
@@ -1417,41 +1388,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 79
-    },
-    {
-      "ticker": "SBAC",
-      "name": "SBAC Corp",
-      "sector": "Technology",
-      "price": 187.54,
-      "momentum_score": 2.4,
-      "ret30": 7.95,
-      "ret60": -7.79,
-      "ret120": 3.79,
-      "vol63": 31.71,
-      "ema12": 187.59,
-      "ema26": 185.74,
-      "trend_gate": true,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 80
-    },
-    {
-      "ticker": "DLTR",
-      "name": "DLTR Corp",
-      "sector": "Technology",
-      "price": 121.21,
-      "momentum_score": 2.26,
-      "ret30": -4.38,
-      "ret60": 6.32,
-      "ret120": 12.76,
-      "vol63": 36.63,
-      "ema12": 128.31,
-      "ema26": 128.42,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 81
+      "rank": 51,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CTAS",
@@ -1468,7 +1408,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 82
+      "rank": 52,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "MDLZ",
@@ -1485,7 +1428,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 83
+      "rank": 53,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "TXN",
@@ -1502,7 +1448,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 84
+      "rank": 54,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "KHC",
@@ -1519,7 +1468,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": true,
-      "rank": 85
+      "rank": 55,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "SBUX",
@@ -1536,7 +1488,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 86
+      "rank": 56,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AMAT",
@@ -1553,7 +1508,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 87
+      "rank": 57,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CCEP",
@@ -1570,7 +1528,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 88
+      "rank": 58,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "GEHC",
@@ -1587,7 +1548,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 89
+      "rank": 59,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ADI",
@@ -1604,7 +1568,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 90
+      "rank": 60,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AVGO",
@@ -1621,24 +1588,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 91
-    },
-    {
-      "ticker": "VSNT",
-      "name": "VSNT Corp",
-      "sector": "Technology",
-      "price": 37.48,
-      "momentum_score": -0.33,
-      "ret30": 0.64,
-      "ret60": -6.55,
-      "ret120": 6.55,
-      "vol63": 37.41,
-      "ema12": 39.3,
-      "ema26": 38.91,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 92
+      "rank": 61,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CMCSA",
@@ -1655,7 +1608,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 93
+      "rank": 62,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "INTU",
@@ -1672,41 +1628,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 94
-    },
-    {
-      "ticker": "CHKP",
-      "name": "CHKP Corp",
-      "sector": "Technology",
-      "price": 134.63,
-      "momentum_score": -0.96,
-      "ret30": -2.19,
-      "ret60": 8.52,
-      "ret120": -12.1,
-      "vol63": 38.79,
-      "ema12": 134.18,
-      "ema26": 132.83,
-      "trend_gate": true,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 95
-    },
-    {
-      "ticker": "HAS",
-      "name": "HAS Corp",
-      "sector": "Technology",
-      "price": 89.61,
-      "momentum_score": -0.99,
-      "ret30": -6.29,
-      "ret60": 7.61,
-      "ret120": -0.66,
-      "vol63": 31.75,
-      "ema12": 92.64,
-      "ema26": 92.39,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 96
+      "rank": 63,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "GOOGL",
@@ -1723,7 +1648,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 97
+      "rank": 64,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "GOOG",
@@ -1740,24 +1668,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 98
-    },
-    {
-      "ticker": "RIVN",
-      "name": "RIVN Corp",
-      "sector": "Technology",
-      "price": 16.08,
-      "momentum_score": -2.37,
-      "ret30": -3.68,
-      "ret60": -4.09,
-      "ret120": 3.51,
-      "vol63": 72.39,
-      "ema12": 16.01,
-      "ema26": 16.07,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 99
+      "rank": 65,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "NFLX",
@@ -1774,7 +1688,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 100
+      "rank": 66,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AXON",
@@ -1791,24 +1708,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 101
-    },
-    {
-      "ticker": "EBAY",
-      "name": "EBAY Corp",
-      "sector": "Technology",
-      "price": 104.96,
-      "momentum_score": -3.09,
-      "ret30": -10.35,
-      "ret60": -3.06,
-      "ret120": 15.04,
-      "vol63": 32.39,
-      "ema12": 104.8,
-      "ema26": 105.73,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 102
+      "rank": 67,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "SNPS",
@@ -1825,41 +1728,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 103
-    },
-    {
-      "ticker": "SOLS",
-      "name": "SOLS Corp",
-      "sector": "Technology",
-      "price": 64.02,
-      "momentum_score": -3.67,
-      "ret30": 11.86,
-      "ret60": -22.82,
-      "ret120": -13.77,
-      "vol63": 62.69,
-      "ema12": 61.71,
-      "ema26": 61.44,
-      "trend_gate": true,
-      "passes_all": false,
-      "above_ema50": true,
-      "rank": 104
-    },
-    {
-      "ticker": "LBTYK",
-      "name": "LBTYK Corp",
-      "sector": "Technology",
-      "price": 10.37,
-      "momentum_score": -4.19,
-      "ret30": 4.02,
-      "ret60": -13.65,
-      "ret120": -10.52,
-      "vol63": 29.8,
-      "ema12": 10.39,
-      "ema26": 10.37,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 105
+      "rank": 68,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "PCAR",
@@ -1876,7 +1748,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 106
+      "rank": 69,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "PEP",
@@ -1893,7 +1768,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 107
+      "rank": 70,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "AEP",
@@ -1910,24 +1788,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 108
-    },
-    {
-      "ticker": "AKAM",
-      "name": "AKAM Corp",
-      "sector": "Technology",
-      "price": 111.65,
-      "momentum_score": -4.46,
-      "ret30": -0.13,
-      "ret60": -16.37,
-      "ret120": 2.56,
-      "vol63": 52.56,
-      "ema12": 108.6,
-      "ema26": 111.57,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 109
+      "rank": 71,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ROST",
@@ -1944,7 +1808,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 110
+      "rank": 72,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "XEL",
@@ -1961,7 +1828,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 111
+      "rank": 73,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ORLY",
@@ -1978,7 +1848,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 112
+      "rank": 74,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "TMUS",
@@ -1995,24 +1868,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 113
-    },
-    {
-      "ticker": "LBTYA",
-      "name": "LBTYA Corp",
-      "sector": "Technology",
-      "price": 10.55,
-      "momentum_score": -5.25,
-      "ret30": 3.18,
-      "ret60": -15.37,
-      "ret120": -11.16,
-      "vol63": 31.91,
-      "ema12": 10.63,
-      "ema26": 10.63,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 114
+      "rank": 75,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "MCHP",
@@ -2029,24 +1888,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 115
-    },
-    {
-      "ticker": "UAL",
-      "name": "UAL Corp",
-      "sector": "Technology",
-      "price": 107.32,
-      "momentum_score": -5.57,
-      "ret30": -13.29,
-      "ret60": -7.1,
-      "ret120": 16.01,
-      "vol63": 45.95,
-      "ema12": 110.72,
-      "ema26": 114.53,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 116
+      "rank": 76,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "MNST",
@@ -2063,7 +1908,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 117
+      "rank": 77,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "BKNG",
@@ -2080,7 +1928,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 118
+      "rank": 78,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "KLAC",
@@ -2097,7 +1948,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 119
+      "rank": 79,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "TTWO",
@@ -2114,7 +1968,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 120
+      "rank": 80,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "EXC",
@@ -2131,24 +1988,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 121
-    },
-    {
-      "ticker": "NTES",
-      "name": "NTES Corp",
-      "sector": "Technology",
-      "price": 115.76,
-      "momentum_score": -6.67,
-      "ret30": -8.73,
-      "ret60": -7.62,
-      "ret120": -0.07,
-      "vol63": 43.37,
-      "ema12": 120.24,
-      "ema26": 122.56,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 122
+      "rank": 81,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "MPWR",
@@ -2165,7 +2008,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 123
+      "rank": 82,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "COST",
@@ -2182,7 +2028,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 124
+      "rank": 83,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "LIN",
@@ -2199,58 +2048,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 125
-    },
-    {
-      "ticker": "AAL",
-      "name": "AAL Corp",
-      "sector": "Technology",
-      "price": 12.91,
-      "momentum_score": -8.18,
-      "ret30": -15.92,
-      "ret60": -13.79,
-      "ret120": 19.58,
-      "vol63": 50.27,
-      "ema12": 13.35,
-      "ema26": 13.94,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 126
-    },
-    {
-      "ticker": "MAT",
-      "name": "MAT Corp",
-      "sector": "Technology",
-      "price": 13.84,
-      "momentum_score": -8.31,
-      "ret30": -10.4,
-      "ret60": -5.56,
-      "ret120": -7.21,
-      "vol63": 31.47,
-      "ema12": 14.5,
-      "ema26": 14.6,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 127
-    },
-    {
-      "ticker": "PTON",
-      "name": "PTON Corp",
-      "sector": "Technology",
-      "price": 5.09,
-      "momentum_score": -8.5,
-      "ret30": -22.29,
-      "ret60": -8.29,
-      "ret120": 25.68,
-      "vol63": 54.94,
-      "ema12": 5.3,
-      "ema26": 5.47,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 128
+      "rank": 84,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ADSK",
@@ -2267,7 +2068,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 129
+      "rank": 85,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "WMT",
@@ -2284,7 +2088,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 130
+      "rank": 86,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "IDXX",
@@ -2301,7 +2108,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 131
+      "rank": 87,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "PDD",
@@ -2318,41 +2128,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 132
-    },
-    {
-      "ticker": "JD",
-      "name": "JD Corp",
-      "sector": "Technology",
-      "price": 26.98,
-      "momentum_score": -9.41,
-      "ret30": -15.13,
-      "ret60": -5.53,
-      "ret120": -0.92,
-      "vol63": 30.42,
-      "ema12": 28.23,
-      "ema26": 28.97,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 133
-    },
-    {
-      "ticker": "XRAY",
-      "name": "XRAY Corp",
-      "sector": "Technology",
-      "price": 10.74,
-      "momentum_score": -9.68,
-      "ret30": -20.35,
-      "ret60": 6.49,
-      "ret120": -7.29,
-      "vol63": 48.54,
-      "ema12": 11.13,
-      "ema26": 11.44,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 134
+      "rank": 88,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CSGP",
@@ -2369,24 +2148,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 135
-    },
-    {
-      "ticker": "FISV",
-      "name": "FISV Corp",
-      "sector": "Technology",
-      "price": 49.02,
-      "momentum_score": -10.26,
-      "ret30": -9.57,
-      "ret60": -8.85,
-      "ret120": -14.09,
-      "vol63": 43.35,
-      "ema12": 51.84,
-      "ema26": 52.23,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 136
+      "rank": 89,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "NXPI",
@@ -2403,7 +2168,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 137
+      "rank": 90,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CHTR",
@@ -2420,7 +2188,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 138
+      "rank": 91,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ISRG",
@@ -2437,24 +2208,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 139
-    },
-    {
-      "ticker": "AZN",
-      "name": "AZN Corp",
-      "sector": "Technology",
-      "price": 157.42,
-      "momentum_score": -11.24,
-      "ret30": -8.73,
-      "ret60": -11.93,
-      "ret120": -16.45,
-      "vol63": 33.65,
-      "ema12": 162.04,
-      "ema26": 163.64,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 140
+      "rank": 92,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "VRSK",
@@ -2471,24 +2228,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 141
-    },
-    {
-      "ticker": "WYNN",
-      "name": "WYNN Corp",
-      "sector": "Technology",
-      "price": 89.99,
-      "momentum_score": -11.42,
-      "ret30": -8.9,
-      "ret60": -15.9,
-      "ret120": -10.99,
-      "vol63": 26.16,
-      "ema12": 93.43,
-      "ema26": 95.86,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 142
+      "rank": 93,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "FER",
@@ -2505,7 +2248,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 143
+      "rank": 94,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "MAR",
@@ -2522,41 +2268,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 144
-    },
-    {
-      "ticker": "ENPH",
-      "name": "ENPH Corp",
-      "sector": "Technology",
-      "price": 36.89,
-      "momentum_score": -11.9,
-      "ret30": 1.57,
-      "ret60": -32.42,
-      "ret120": -14.76,
-      "vol63": 66.25,
-      "ema12": 37.32,
-      "ema26": 38.37,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 145
-    },
-    {
-      "ticker": "ALGN",
-      "name": "ALGN Corp",
-      "sector": "Technology",
-      "price": 152.93,
-      "momentum_score": -12.47,
-      "ret30": -12.91,
-      "ret60": -12.53,
-      "ret120": -11.3,
-      "vol63": 41.85,
-      "ema12": 158.45,
-      "ema26": 162.96,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 146
+      "rank": 95,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ALNY",
@@ -2573,7 +2288,10 @@
       "trend_gate": true,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 147
+      "rank": 96,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "HON",
@@ -2590,58 +2308,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 148
-    },
-    {
-      "ticker": "GFS",
-      "name": "GFS Corp",
-      "sector": "Technology",
-      "price": 45.95,
-      "momentum_score": -14.5,
-      "ret30": -6.26,
-      "ret60": -43.46,
-      "ret120": 8.35,
-      "vol63": 63.12,
-      "ema12": 45.84,
-      "ema26": 48.63,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 149
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Corp",
-      "sector": "Technology",
-      "price": 71.32,
-      "momentum_score": -15.83,
-      "ret30": -15.49,
-      "ret60": -38.93,
-      "ret120": 17.96,
-      "vol63": 77.93,
-      "ema12": 73.55,
-      "ema26": 76.98,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 150
-    },
-    {
-      "ticker": "TCOM",
-      "name": "TCOM Corp",
-      "sector": "Technology",
-      "price": 39.28,
-      "momentum_score": -16.19,
-      "ret30": -13.32,
-      "ret60": -15.48,
-      "ret120": -24.41,
-      "vol63": 39.02,
-      "ema12": 42.72,
-      "ema26": 43.88,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 151
+      "rank": 97,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "CDNS",
@@ -2658,24 +2328,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 152
-    },
-    {
-      "ticker": "BIDU",
-      "name": "BIDU Corp",
-      "sector": "Technology",
-      "price": 91.94,
-      "momentum_score": -17.27,
-      "ret30": -12.37,
-      "ret60": -20.58,
-      "ret120": -24.56,
-      "vol63": 45.5,
-      "ema12": 95.35,
-      "ema26": 98.59,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 153
+      "rank": 98,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "ODFL",
@@ -2692,75 +2348,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 154
-    },
-    {
-      "ticker": "LULU",
-      "name": "LULU Corp",
-      "sector": "Technology",
-      "price": 100.75,
-      "momentum_score": -20.5,
-      "ret30": -16.27,
-      "ret60": -15.18,
-      "ret120": -39.09,
-      "vol63": 51.85,
-      "ema12": 112.49,
-      "ema26": 115.9,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 155
-    },
-    {
-      "ticker": "NCLH",
-      "name": "NCLH Corp",
-      "sector": "Technology",
-      "price": 14.89,
-      "momentum_score": -26.91,
-      "ret30": -29.85,
-      "ret60": -23.39,
-      "ret120": -24.82,
-      "vol63": 49.77,
-      "ema12": 16.05,
-      "ema26": 17.05,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 156
-    },
-    {
-      "ticker": "TRIP",
-      "name": "TRIP Corp",
-      "sector": "Technology",
-      "price": 8.92,
-      "momentum_score": -29.3,
-      "ret30": -40.25,
-      "ret60": -28.12,
-      "ret120": -3.67,
-      "vol63": 67.69,
-      "ema12": 9.59,
-      "ema26": 10.42,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 157
-    },
-    {
-      "ticker": "TTD",
-      "name": "TTD Corp",
-      "sector": "Technology",
-      "price": 13.94,
-      "momentum_score": -29.59,
-      "ret30": -26.26,
-      "ret60": -27.67,
-      "ret120": -40.79,
-      "vol63": 65.39,
-      "ema12": 14.08,
-      "ema26": 14.66,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 158
+      "rank": 99,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
       "ticker": "APP",
@@ -2777,24 +2368,10 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 159
-    },
-    {
-      "ticker": "LCID",
-      "name": "LCID Corp",
-      "sector": "Technology",
-      "price": 4.27,
-      "momentum_score": -39.76,
-      "ret30": -45.95,
-      "ret60": -17.88,
-      "ret120": -57.09,
-      "vol63": 119.7,
-      "ema12": 4.88,
-      "ema26": 5.41,
-      "trend_gate": false,
-      "passes_all": false,
-      "above_ema50": false,
-      "rank": 160
+      "rank": 100,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     }
   ]
 }

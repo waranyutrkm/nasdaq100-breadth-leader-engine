@@ -100,10 +100,14 @@ def generate_daily_snapshot() -> dict:
     ema12_row = features["ema12"].iloc[-1]
     ema26_row = features["ema26"].iloc[-1]
 
+    # Load active snapshot universe
+    snapshot_path = DATA_DIR / "local_snapshot_universe.csv"
+    snapshot_tickers = set(pd.read_csv(snapshot_path)["ticker"]) if snapshot_path.exists() else set()
+
     # Collect candidate stock table
     universe_symbols = [
         s for s in close.columns
-        if s not in {"QQQ", "BIL", "^NDX", "^IXIC"}
+        if (s in snapshot_tickers if snapshot_tickers else s not in {"QQQ", "BIL", "^NDX", "^IXIC"})
         and eligible_row.get(s, False)
         and pd.notna(close[s].iloc[-1])
     ]
@@ -117,7 +121,7 @@ def generate_daily_snapshot() -> dict:
         r120_val = float(r120_row.get(s, np.nan))
         vol_val = float(vol63_row.get(s, np.nan))
         tr_gate = bool(trend_gate_row.get(s, False))
-        info = meta_info.get(s, {"name": f"{s} Corp", "sector": "Technology"})
+        info = meta_info.get(s, {"name": f"{s} Corporation", "sector": "Technology"})
 
         # Pass criteria: trend_gate + positive score + positive 30d/60d
         passes_all = tr_gate and (score_val > 0) and (r30_val > 0) and (r60_val > 0)
@@ -143,6 +147,23 @@ def generate_daily_snapshot() -> dict:
     stock_items.sort(key=lambda x: (1 if x["passes_all"] else 0, x["momentum_score"]), reverse=True)
     for rank_idx, item in enumerate(stock_items, start=1):
         item["rank"] = rank_idx
+        if item["passes_all"]:
+            if rank_idx <= 5:
+                item["signal"] = "BUY"
+                item["signal_badge"] = "[ALPHA BUY]"
+                item["action_reason"] = f"ผู้นำอันดับ #{rank_idx} ผ่านเกณฑ์ Trend & Momentum ครบถ้วน (เป้าหมาย Top-5)"
+            elif rank_idx <= 8:
+                item["signal"] = "HOLD"
+                item["signal_badge"] = "[HOLD BUFFER]"
+                item["action_reason"] = f"อยู่อันดับ #{rank_idx} ในขอบเขต Buffer (อันดับ 1–8) ให้ถือต่อไม่ขายหมู"
+            else:
+                item["signal"] = "WATCHLIST"
+                item["signal_badge"] = "[WATCHLIST]"
+                item["action_reason"] = f"ผ่านเกณฑ์ทุกข้อ อันดับ #{rank_idx} อยู่ในคิวรอสลับเข้าพอร์ต"
+        else:
+            item["signal"] = "AVOID"
+            item["signal_badge"] = "[TREND FAIL]"
+            item["action_reason"] = "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
 
     # Strategy 1: Core-Satellite (50% QQQ Core + 50% Leader Satellite Top 5)
     core_selected = [x["ticker"] for x in stock_items if x["passes_all"]][:5]
@@ -196,6 +217,70 @@ def generate_daily_snapshot() -> dict:
     if legacy_cash > 0:
         legacy_allocations["BIL"] = legacy_cash
 
+    def build_action_cards(allocations_dict: dict[str, float], active_tickers: list[str]) -> dict:
+        buy_list = []
+        hold_list = []
+        sell_list = []
+
+        stock_map = {x["ticker"]: x for x in stock_items}
+
+        if "QQQ" in allocations_dict:
+            buy_list.append({
+                "ticker": "QQQ",
+                "name": "Invesco QQQ Trust (Nasdaq-100 Core)",
+                "price": round(qqq_close, 2),
+                "weight": allocations_dict["QQQ"],
+                "reason": "ถือครองแกนหลัก Core 50% เพื่อเกาะ Secular Trend ของตลาด",
+                "badge": "[CORE HOLD]",
+            })
+
+        for s in active_tickers:
+            if s in stock_map and s in allocations_dict:
+                st = stock_map[s]
+                buy_list.append({
+                    "ticker": s,
+                    "name": st["name"],
+                    "price": st["price"],
+                    "weight": allocations_dict[s],
+                    "reason": f"หุ้นผู้นำอันดับ #{st['rank']} (Score: +{st['momentum_score']}%)",
+                    "badge": "[ALPHA BUY]",
+                })
+
+        # Stocks in buffer (Ranks 6 to 8)
+        buffer_stocks = [x for x in stock_items if 6 <= x["rank"] <= 8 and x["passes_all"]]
+        for st in buffer_stocks:
+            hold_list.append({
+                "ticker": st["ticker"],
+                "name": st["name"],
+                "price": st["price"],
+                "weight": 0.0,
+                "reason": f"อันดับ #{st['rank']} อยู่ในเกราะ Buffer ให้ถือต่อ ปล่อยกำไรวิ่ง",
+                "badge": "[HOLD BUFFER]",
+            })
+
+        # Stocks that failed trend gate
+        failed_stocks = [x for x in stock_items if not x["trend_gate"]][:5]
+        for st in failed_stocks:
+            sell_list.append({
+                "ticker": st["ticker"],
+                "name": st["name"],
+                "price": st["price"],
+                "reason": "หลุดเส้นค่าเฉลี่ย EMA26 แนวโน้มเสีย ต้องตัดขาดทุน/ขายออก",
+                "badge": "[EXIT TREND]",
+            })
+
+        if allocations_dict.get("BIL", 0.0) > 0:
+            buy_list.append({
+                "ticker": "BIL",
+                "name": "SPDR 1-3 Month T-Bill (Cash Reserve)",
+                "price": round(bil_close, 2),
+                "weight": allocations_dict["BIL"],
+                "reason": "พักเงินสดในตั๋วเงินคลังสหรัฐฯ รับผลตอบแทนดอกเบี้ยระยะสั้น",
+                "badge": "[CASH YIELD]",
+            })
+
+        return {"buy": buy_list, "hold": hold_list, "sell": sell_list}
+
     # Today's Action Summary
     regime_labels = {
         REGIME_BROAD_BULL: ("BROAD BULL", "ตลาดกระทิงเต็มรูปแบบ หุ้นผู้นำขึ้นกระจายตัวกว้าง ถือหุ้นตามน้ำหนักเต็มอัตรา"),
@@ -235,6 +320,7 @@ def generate_daily_snapshot() -> dict:
                 "allocations": core_allocations,
                 "selected_tickers": core_selected,
                 "exposure_pct": round((1.0 - core_allocations.get("BIL", 0.0)) * 100, 1),
+                "actions": build_action_cards(core_allocations, core_selected),
             },
             "fast_alpha": {
                 "name": "Fast-Alpha Leader",
@@ -242,6 +328,7 @@ def generate_daily_snapshot() -> dict:
                 "allocations": fast_allocations,
                 "selected_tickers": fast_selected,
                 "exposure_pct": round((1.0 - fast_allocations.get("BIL", 0.0)) * 100, 1),
+                "actions": build_action_cards(fast_allocations, fast_selected),
             },
             "legacy_adaptive": {
                 "name": "Adaptive Regime Guard",
@@ -249,6 +336,7 @@ def generate_daily_snapshot() -> dict:
                 "allocations": legacy_allocations,
                 "selected_tickers": legacy_selected,
                 "exposure_pct": round((1.0 - legacy_allocations.get("BIL", 0.0)) * 100, 1),
+                "actions": build_action_cards(legacy_allocations, legacy_selected),
             },
         },
         "stock_rankings": stock_items,
