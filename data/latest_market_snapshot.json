@@ -1,8 +1,8 @@
 {
   "metadata": {
     "last_updated_date": "2026-11-25",
-    "generated_at_utc": "2026-11-26T03:43:00.529459+00:00",
-    "total_constituents": 98
+    "generated_at_utc": "2026-11-27T03:43:53.239789+00:00",
+    "total_constituents": 99
   },
   "market_macro": {
     "qqq_close": 633.93,
@@ -15,11 +15,11 @@
     "regime_desc": "ตลาดมีสัญญาณเตือนหรือหลุดเทรนด์ ปรับพอร์ตถือ BIL (T-Bills) 100% ป้องกันเงินต้น"
   },
   "breadth": {
-    "breadth_ema50_pct": 49.0,
-    "breadth_ema100_pct": 49.0,
-    "breadth_ema200_pct": 49.0,
-    "positive_ret21_pct": 42.9,
-    "positive_ret63_pct": 40.8
+    "breadth_ema50_pct": 48.5,
+    "breadth_ema100_pct": 48.5,
+    "breadth_ema200_pct": 48.5,
+    "positive_ret21_pct": 42.4,
+    "positive_ret63_pct": 41.4
   },
   "strategies": {
     "core_satellite": {
@@ -1438,6 +1438,26 @@
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
     },
     {
+      "ticker": "QCOM",
+      "name": "Qualcomm Inc.",
+      "sector": "Semiconductors",
+      "price": 168.66,
+      "momentum_score": -4.91,
+      "ret30": -2.29,
+      "ret60": 1.78,
+      "ret120": -21.47,
+      "vol63": 58.26,
+      "ema12": 165.84,
+      "ema26": 169.02,
+      "trend_gate": false,
+      "passes_all": false,
+      "above_ema50": false,
+      "rank": 58,
+      "signal": "AVOID",
+      "signal_badge": "[TREND FAIL]",
+      "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
+    },
+    {
       "ticker": "PCAR",
       "name": "PACCAR Inc.",
       "sector": "Industrials",
@@ -1452,7 +1472,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 58,
+      "rank": 59,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1472,7 +1492,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 59,
+      "rank": 60,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1492,7 +1512,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 60,
+      "rank": 61,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1512,7 +1532,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 61,
+      "rank": 62,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1532,7 +1552,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 62,
+      "rank": 63,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1552,7 +1572,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 63,
+      "rank": 64,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1572,7 +1592,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 64,
+      "rank": 65,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1592,7 +1612,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 65,
+      "rank": 66,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1612,7 +1632,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 66,
+      "rank": 67,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1632,7 +1652,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 67,
+      "rank": 68,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1652,7 +1672,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 68,
+      "rank": 69,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1672,7 +1692,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 69,
+      "rank": 70,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1692,7 +1712,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 70,
+      "rank": 71,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1712,7 +1732,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 71,
+      "rank": 72,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1732,7 +1752,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 72,
+      "rank": 73,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1752,7 +1772,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 73,
+      "rank": 74,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1772,7 +1792,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 74,
+      "rank": 75,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1792,7 +1812,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 75,
+      "rank": 76,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1812,7 +1832,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 76,
+      "rank": 77,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1832,7 +1852,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 77,
+      "rank": 78,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1852,7 +1872,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 78,
+      "rank": 79,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1872,7 +1892,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 79,
+      "rank": 80,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1892,7 +1912,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 80,
+      "rank": 81,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1912,7 +1932,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 81,
+      "rank": 82,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1932,7 +1952,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 82,
+      "rank": 83,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1952,7 +1972,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 83,
+      "rank": 84,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1972,7 +1992,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 84,
+      "rank": 85,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -1992,7 +2012,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 85,
+      "rank": 86,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2012,7 +2032,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 86,
+      "rank": 87,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2032,7 +2052,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 87,
+      "rank": 88,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2052,7 +2072,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 88,
+      "rank": 89,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2072,7 +2092,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 89,
+      "rank": 90,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2092,7 +2112,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 90,
+      "rank": 91,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2112,7 +2132,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 91,
+      "rank": 92,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2132,7 +2152,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 92,
+      "rank": 93,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2152,7 +2172,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 93,
+      "rank": 94,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2172,7 +2192,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 94,
+      "rank": 95,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2192,7 +2212,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 95,
+      "rank": 96,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2212,7 +2232,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 96,
+      "rank": 97,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2232,7 +2252,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 97,
+      "rank": 98,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
@@ -2252,7 +2272,7 @@
       "trend_gate": false,
       "passes_all": false,
       "above_ema50": false,
-      "rank": 98,
+      "rank": 99,
       "signal": "AVOID",
       "signal_badge": "[TREND FAIL]",
       "action_reason": "ไม่ผ่านเกณฑ์ Single-Asset Gate (ราคาต่ำกว่า EMA26 หรือโมเมนตัมติดลบ)"
